@@ -1,0 +1,24 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: "practice"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/practice
+    username: postgres
+    password: 963
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 22MB
+      max-request-size: 22MB
+
+springdoc:
+  swagger-ui:
+    path: /docs/swagger-ui.html
+  api-docs:
+    path: /docs/api-docs
